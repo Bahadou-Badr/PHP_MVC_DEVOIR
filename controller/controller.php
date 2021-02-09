@@ -1,12 +1,12 @@
 <?php
 
-require('model/frontend.php');
+require('model/model.php');
 
 function listSujets()
 {
     $sujets = getSujets();
 
-    require('view/frontend/listPostsView.php');
+    require('view/frontend/listSujetsView.php');
 }
 
 function sujet()
@@ -14,7 +14,7 @@ function sujet()
     $sujet = getSujet($_GET['id']);
     $contacts = getContacts($_GET['id']);
 
-    require('view/frontend/postView.php');
+    require('view/frontend/sujetView.php');
 }
 
 function addContact($sujetId, $nom, $prenom, $tel, $mail, $fax, $lieu_ins, $code_ins)
