@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+.modal .modal-container .form button, .container .container-top .right button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.container .container-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* body {
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(#f39e00, #ffd993);
+  padding: 1.5rem;
+} */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 5rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px #a52a49;
+  width: 1200px;
+}
+.container .container-top .left h2 {
+  opacity: 0.9;
+}
+.container .container-top .left p {
+  opacity: 0.6;
+  margin-right: 10rem;
+}
+.container .container-top .right button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+.container .container-top .right button:hover {
+  opacity: 0.75;
+}
+.container .container-body {
+  margin-top: 2rem;
+}
+.container .container-body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .container-body table td, .container .container-body table th {
+  text-align: left;
+  padding: 8px;
+}
+.container .container-body table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  padding: 1rem;
+}
+.modal .modal-container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 10vh auto;
+  padding: 1rem 2rem 2.5rem;
+  border-radius: 10px;
+  transition: 0.5s ease all;
+  animation: animate 0.6s ease;
+}
+.modal .modal-container .form h2 {
+  text-align: center;
+}
+.modal .modal-container .form .form-control {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.modal .modal-container .form .form-control label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.modal .modal-container .form .form-control input {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.modal .modal-container .form button {
+  background-color: #111;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #111;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+.modal .modal-container .form button:hover {
+  opacity: 0.85;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* ::::/ */
+.form-group{
+    display: flex;
+}
